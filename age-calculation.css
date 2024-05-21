@@ -1,7 +1,7 @@
 
 /* inputların */
 .bilgi{
-    position: relative;
+    position: absolute;
     height: 25px;
     width: 300px;
     left: 100px;
@@ -21,3 +21,12 @@
     background-color: yellow;
 
 }
+
+#guncel{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+
+}
+

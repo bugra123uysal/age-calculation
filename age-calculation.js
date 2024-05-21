@@ -6,22 +6,16 @@
 /* hesapla */
 
 
-var d=21;
-var m=5;
-var y=2024;
+/* bugünün tarihi */
+ var  bgntrh=document.getElementById("bugün").innerHTML=new Date()
 
-function hsp( ){
-    var gün =document.getElementById("g").value
-var ay =document.getElementById("a").value
-var yıl =document.getElementById("y").value
-    var d=21;
-    var m=5;
-    var y=2024;
-
-var day=g
-var mount=m-a
-var years=years-y
-
- document.getElementById("guncel").innerHTML=day
+function hsp(){
+var gır=document.getElementById("tarih").value;    
+let years=bgntrh.getFullYear() - gır.getFullYear();
+let mont=bgntrh.getMonth() - gır.getMonth();
+ document.getElementById("guncel").innerHTML=years 
 }
+
+
+
     
