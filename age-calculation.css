@@ -1,0 +1,23 @@
+
+/* inputların */
+.bilgi{
+    position: relative;
+    height: 25px;
+    width: 300px;
+    left: 100px;
+    top: 100px;
+    display: flex;
+    margin: 50px;
+}
+
+/* hesapla buttonu */
+#btn{
+    position: absolute;
+    height: 30px;
+    width: 120px;
+    top: 400px;
+    left: 230px;
+    color: black;
+    background-color: yellow;
+
+}
