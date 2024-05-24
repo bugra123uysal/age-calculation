@@ -7,13 +7,25 @@
 
 
 /* bugünün tarihi */
- var  bgntrh=document.getElementById("bugün").innerHTML=new Date()
 
 function hsp(){
-var gır=document.getElementById("tarih").value;    
-let years=bgntrh.getFullYear() - gır.getFullYear();
-let mont=bgntrh.getMonth() - gır.getMonth();
- document.getElementById("guncel").innerHTML=years 
+const  bgntrh= document.getElementById("tarih");
+const  history=new Date(bgntrh.value);
+const today=new Date();
+
+
+ 
+const age =today.getFullYear() - history.getFullYear();
+const month=today.getMonth() -  history.getMonth();
+
+if(month < 0 ||(month === 0 && today.getDate()< history.getDate() )){
+    age--;
+}
+
+
+
+ document.getElementById("guncel").textContent= age
+
 }
 
 
